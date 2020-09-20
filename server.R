@@ -13,7 +13,7 @@ shinyServer(function(input, output) {
         bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
         # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'red', border = 'white', main = 'MTCars HP Distribution'
+        hist(x, breaks = bins, col = input$color, border = 'white', main = 'MTCars HP Distribution'
              ,ylab = 'Count', xlab = 'Horsepower')
 
     })
@@ -22,10 +22,11 @@ shinyServer(function(input, output) {
         # generate bins based on input$bins from ui.R
         #        x    <- faithful[, 2]
         x<- mtcars$wt
-        bins <- seq(min(x), max(x), length.out = input$bins + 1)
+        bins <- seq(min(x), max(x), length.out = input$bins + 1
+        )
         
         # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'red', border = 'white', main = 'MTCars weight Distribution'
+        hist(x, breaks = bins, col = input$color, border = 'white', main = 'MTCars weight Distribution'
              ,ylab = 'Count', xlab = 'Weight')
         
     })
@@ -38,7 +39,7 @@ shinyServer(function(input, output) {
         bins <- seq(min(x), max(x), length.out = input$bins + 1)
         
         # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'red', border = 'white', main = 'MTCars Carb Distribution'
+        hist(x, breaks = bins, col = input$color, border = 'white', main = 'MTCars Carb Distribution'
              ,ylab = 'Count', xlab = 'Carb')
         
     })

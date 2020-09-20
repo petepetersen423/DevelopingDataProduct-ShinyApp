@@ -14,7 +14,12 @@ shinyUI(fluidPage(
                         "Number of bins:",
                         min = 5,
                         max = 10,
-                        value = 6)
+                        value = 6),
+            selectInput("color", "Choose a color:",
+                        choices = c("turquoise", "aquamarine", "darkgreen","steelblue"))
+            
+           
+            
         ),
 
         # Show a plot of the generated distribution
