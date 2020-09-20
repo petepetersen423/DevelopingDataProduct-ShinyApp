@@ -13,21 +13,23 @@ library(shiny)
 shinyUI(fluidPage(
 
     # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    titlePanel("MTCARS Feature Exploration"),
 
     # Sidebar with a slider input for number of bins
     sidebarLayout(
         sidebarPanel(
             sliderInput("bins",
                         "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
+                        min = 10,
+                        max = 20,
+                        value = 10)
         ),
 
         # Show a plot of the generated distribution
         mainPanel(
-            plotOutput("distPlot")
+            plotOutput("distPlot"),
+            plotOutput("wgtplot"),
+            plotOutput("carbplot")
         )
     )
 ))
