@@ -1,0 +1,47 @@
+MyShineyApp
+========================================================
+author: Pete Petersen
+date: 09-20-2020
+autosize: true
+
+First Slide
+========================================================
+
+I built an application for the JHU Data Science Specialization for the Data Products course.  Come check out this really cool app that was done in slidify:    
+ <https://petepetersen423.shinyapps.io/ShinyApp/>.
+
+- It was built by hand
+- It has two controls
+- And uses best of all uses MTCARS dataset
+
+About the MTCARS dataset used in the shiny app.
+========================================================
+
+```{r}
+summary(mtcars$hp)
+summary(mtcars$wt)
+summary(mtcars$carb)
+```
+
+Exploring the MTCARS Data
+========================================================
+
+```{r, echo=FALSE}
+attach(mtcars)
+par(mfrow=c(1,3))
+boxplot(mtcars$hp, col = "steelblue", main="Horsepower")
+boxplot(mtcars$wt, col = "steelblue", main="Weight")
+boxplot(mtcars$carb, col = "steelblue", main="Carb")
+hist(mpg, col="red")
+```
+
+Thank you for using my App
+========================================================
+
+- Easy to use, just select the bins  
+- Fun to explore pick you preferred color  
+
+If you think this a a great way to spend a few hours then take the course!!
+
+Regards,
+  Pete

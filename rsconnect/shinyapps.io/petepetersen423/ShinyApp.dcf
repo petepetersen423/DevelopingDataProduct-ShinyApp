@@ -1,0 +1,12 @@
+name: ShinyApp
+title: ShinyApp
+username:
+account: petepetersen423
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2850775
+bundleId: 3650930
+url: https://petepetersen423.shinyapps.io/ShinyApp/
+when: 1600666779.96561
+asMultiple: FALSE
+asStatic: FALSE
